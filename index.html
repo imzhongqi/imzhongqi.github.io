@@ -5,8 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Token spritz</title>
         <link href="css/style.css" rel="stylesheet">
+        <!-- <script src="https://telegram.org/js/telegram-web-app.js"></script> -->
     </head>
     <body>
-        hello 
+        <div id="app">
+            test
+        </div>
+        <script>
+            let elem = document.getElementById("app");
+            elem.innerText = window.Telegram.WebApp.initData
+        </script>
     </body>
 </html>
