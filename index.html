@@ -11,13 +11,13 @@
         <div id="app">
             test
         </div>
-        <script>
-            let elem = document.getElementById("app");
-            if (window.Telegram.WebApp) {
-                elem.innerText = window.Telegram.WebApp.initData
-            } else {
-                elem.innerText = "FUCK NOT FOUND INITDATA"
-            }
-        </script>
     </body>
+    <script>
+        let elem = document.getElementById("app");
+        if (window.Telegram) {
+            elem.innerText = window.Telegram.WebApp.initData
+        } else {
+            elem.innerText = "FUCK NOT FOUND INITDATA"
+        }
+    </script>
 </html>
